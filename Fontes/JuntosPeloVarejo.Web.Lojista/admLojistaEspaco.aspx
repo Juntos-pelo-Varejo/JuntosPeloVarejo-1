@@ -1,8 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mpLojista.Master" AutoEventWireup="true" CodeBehind="admLojistaEspaco.aspx.cs" Inherits="JuntosPeloVarejo.Web.Lojista.admLojistaEspaco" %>
- 
+
 
 <%@ Register Src="crPaginacao.ascx" TagPrefix="uc1" TagName="crPaginacao" %>
- 
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -14,7 +14,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>Espaço para entrega</h1>
+                    <h1>Espaço para entrega 1</h1>
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
@@ -33,7 +33,7 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                             
+
 
                             <asp:LinkButton ID="btnAdicionar" runat="server" ToolTip="Adicionar produto" OnClick="btnAdicionar_Click"><i class="fas fa-plus"></i> Adicionar</asp:LinkButton>
 
@@ -104,42 +104,55 @@
             <div class="col-md-6">
                 <div class="card card-info">
                     <div class="card-header">
-                        <h3 class="card-title">- Cadastro espaço para entrega</h3>
+                        <h3 class="card-title">- Cadastro espaço para entrega 1</h3>
                     </div>
                     <!-- /.card-header -->
 
                     <div class="card-body">
-                         
+
                         <div class="form-group row">
                             <label for="inputEmail3" class="col-sm-2 col-form-label">Nome</label>
                             <div class="col-sm-10">
                                 <input type="text" class="form-control" id="inputEmail3">
                             </div>
-                        </div>  
+                        </div>
 
                         <div class="form-group row">
                             <label for="inputEmail3" class="col-sm-2 col-form-label">Tipo Encomenda</label>
                             <div class="col-sm-10">
-                               <select multiple="" class="custom-select">
-                          <option>option 1</option>
-                          <option>option 2</option>
-                          <option>option 3</option>
-                          <option>option 4</option>
-                          <option>option 5</option>
-                        </select>
+                                <select multiple="" class="custom-select">
+                                    <option>Pacote Pequeno</option>
+                                    <option>Pacote Médio</option>
+                                    <option>Pacote Grande teste</option>
+                                </select>
                             </div>
-                        </div>  
+                        </div>
 
-                        
+                        <div class="form-group row">
+                            <label for="inputPassword3" class="col-sm-2 col-form-label">Publicidade</label>
+                            <div class="col-sm-10">
+                                <textarea class="textarea" placeholder="Place some text here"
+                                    style="width: 100%; height: 300px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-10 col-form-label float-right">Receber encomendas terceiro?
+                            </label>
+                            <div class="col-sm-2">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input">
+                                </div>
+                            </div>
+                        </div>
 
                         <div class="form-group row">
                             <label class="col-sm-2 col-form-label">Ativo</label>
-                            <div class="col-sm-10">
+                            <div class="col-sm-4">
                                 <div class="form-check">
                                     <input type="checkbox" class="form-check-input" id="exampleCheck2">
                                 </div>
-                            </div>
-
+                            </div> 
                         </div>
 
                     </div>
@@ -154,7 +167,7 @@
             </div>
 
             <div class="col-md-3">
-            </div> 
+            </div>
 
         </div>
     </asp:Panel>
@@ -165,5 +178,14 @@
 
 
     <asp:LinkButton ID="lbkExibir" runat="server" Style="display: none;"></asp:LinkButton>
-     
+
+     <!-- Summernote -->
+    <script src="plugins/summernote/summernote-bs4.min.js"></script>
+    <script>
+        $(function () {
+            // Summernote
+            $('.textarea').summernote()
+        })
+
+</script>
 </asp:Content>
