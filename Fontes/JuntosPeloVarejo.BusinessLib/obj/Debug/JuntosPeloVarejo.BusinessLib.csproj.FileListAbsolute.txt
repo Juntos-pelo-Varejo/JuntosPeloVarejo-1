@@ -1,0 +1,5 @@
+C:\Users\konectando\OneDrive\Projetos\HackingRio\Fontes\JuntosPeloVarejo.BusinessLib\bin\Debug\JuntosPeloVarejo.BusinessLib.dll
+C:\Users\konectando\OneDrive\Projetos\HackingRio\Fontes\JuntosPeloVarejo.BusinessLib\bin\Debug\JuntosPeloVarejo.BusinessLib.pdb
+C:\Users\konectando\OneDrive\Projetos\HackingRio\Fontes\JuntosPeloVarejo.BusinessLib\obj\Debug\JuntosPeloVarejo.BusinessLib.csprojAssemblyReference.cache
+C:\Users\konectando\OneDrive\Projetos\HackingRio\Fontes\JuntosPeloVarejo.BusinessLib\obj\Debug\JuntosPeloVarejo.BusinessLib.dll
+C:\Users\konectando\OneDrive\Projetos\HackingRio\Fontes\JuntosPeloVarejo.BusinessLib\obj\Debug\JuntosPeloVarejo.BusinessLib.pdb
